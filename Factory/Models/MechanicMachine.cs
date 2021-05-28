@@ -1,4 +1,4 @@
-namespace StringFactory.Models
+namespace Factory.Models
 {
   public class MechanicMachine
   {       

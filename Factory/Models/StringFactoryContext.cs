@@ -1,14 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace StringFactory.Models
+namespace Factory.Models
 {
-  public class StringFactoryContext : DbContext
+  public class FactoryContext : DbContext
   {
     public virtual DbSet<Mechanic> Categories { get; set; }
     public DbSet<Machine> Machines { get; set; }
     public DbSet<MechanicMachine> MechanicMachine { get; set; }
 
-    public StringFactoryContext(DbContextOptions options) : base(options) { }
+    public FactoryContext(DbContextOptions options) : base(options) { }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using StringFactory.Models;
+using Factory.Models;
 
-namespace StringFactory
+namespace Factory
 {
   public class Startup
   {
@@ -25,7 +25,7 @@ namespace StringFactory
       services.AddMvc();
 
       services.AddEntityFrameworkMySql()
-        .AddDbContext<StringFactoryContext>(options => options
+        .AddDbContext<FactoryContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
     }
 
@@ -43,7 +43,7 @@ namespace StringFactory
       
       app.Run(async (context) =>
       {
-        await context.Response.WriteAsync("Hello World!");
+        await context.Response.WriteAsync("Somethings Wrong!");
       });
     }
   }
