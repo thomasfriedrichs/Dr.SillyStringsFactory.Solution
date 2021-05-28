@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Mechanic
+
+<h4>Add a new mechanic</h4>
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+  <input type="submit" value="Add new mechanic" />
+}
+<p>@Html.ActionLink("Show all mechanics", "Index")</p>
