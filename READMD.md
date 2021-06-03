@@ -28,7 +28,7 @@ _{This program uses many to many relationships to create and track mechanics and
 ```
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=Hair_Salon;userid=root;pwd=epicodus;"
+      "DefaultConnection": "Server=localhost;Port=3306;database=thomas_friedrichs;userid=root;pwd=epicodus;"
   }
 }
 ```
