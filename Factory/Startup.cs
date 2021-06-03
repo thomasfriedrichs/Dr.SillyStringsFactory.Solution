@@ -42,7 +42,7 @@ namespace Factory
       app.UseStaticFiles();
       
       app.Run(async (context) =>
-      {
+      { 
         await context.Response.WriteAsync("Somethings Wrong!");
       });
     }
